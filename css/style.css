@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(145, 184, 216);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nav, #footNav{
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #59609f;
+    border-radius: 3px;
+}
+
+#footNav{
+    height: 50px;
+}
+
+#nav ul li , #footNav ul li, .desplegable{
+    display: inline-block;
+    float: left;
+    width: 70px;
+    position: relative;
+    top: 23px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-align: center;
+    margin-right: 4%;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#nav ul li.desplegable ul{
+    background-color: #fff;
+    width: 140px;
+    height: 113px;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 5px 10px;
+    padding: 0;
+    display: none;
+}
+
+li.desplegable:hover > ul {
+	display:block;
+}
+
+#nav ul li.desplegable ul li{
+    position: relative;
+    top: 1px;
+    width: 90%;
+}
+
+#nav ul li.desplegable ul li:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+#footNav ul li{
+    width: 126px;
+    top: 10px;
+}
+
+#navVertical{
+    width: 221px;
+    height: auto;
+    background-color: #59609f;
+    position: fixed;
+    right: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#navVertical ul{
+    list-style: none;
+}
+
+#navVertical ul li {
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-align: center;
+    width: 126px;
+    margin-bottom: 18px;
+}
+
+#navVertical ul li:hover, #nav ul li:hover, #footNav ul li:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+#tituloPagina{
+    text-align: center;
+}
+
+main{
+    width: 50%;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+.tituloNoticia{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #59609f;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.tituloNoticia:hover{
+    cursor: pointer;
+}
+
+.noticia{
+    width: 100%;
+    min-height: 550px;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 130px;
+}
+
+
+p{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 14px;
+    margin: 10px;
+}
+
+.importanteNoticia{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+}
+
+img{
+    zoom: 0.6;
+    float: left;
+    padding: 30px;
+}
+
+.hideAndSekk{
+    display: hide;
+}

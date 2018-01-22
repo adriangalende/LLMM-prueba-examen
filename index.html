@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/javascript.js"></script>
+    <title>Página principal</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li> Home </li>
+                <li> Noticias </li>
+                <li class="desplegable" onmouseover="desplegableOn()" onmouseout="desplegableOut()"><a href="#">Nosotros</a>
+                    <ul>
+                      <li><a href="#">Historia</a></li>
+                      <li><a href="#">Valores</a></li>
+                      <li><a href="#">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1 id="tituloPagina"> Artículos y noticias del mundo </h1>
+    </header>
+    <aside>
+        <nav id="navVertical">
+            <h3>Barra lateral</h3>
+            <ul>
+                <li>Campamentos</li>
+                <li>Circuitos</li>
+                <li>Equipamiento</li>
+                <li>Mapas Personalizados</li>
+                <li>Catálogo de dinosaurios</li>
+                <li>Checklist del equipamiento</li>
+
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="tituloNoticia" onclick="toggleHide(document.getElementsByName('noticia1'));">Informática y comunicaciones</div>
+        <section name="noticia1" class="noticia">
+           <p class="importanteNoticia">¿Qué son las media querys?</p>
+           <p>Las media queries son una sintaxis especial para CSS que nos permite definir unos estilos que solo se aplicarán en el caso de que se cumplan unas condiciones definidas. Podemos asimilarlos a unas líneas de código opcional, que sólo se mostrarán para algunos usuarios o dispositivos.</p>
+            <p>           
+                            <p class="importanteNoticia">Media queries y diseño responsive. La revolución del diseño web móvil. </p>
+                    En un momento donde el tráfico móvil se multiplica cada año, ya no servían las webs estáticas diseñadas para mostrarse en una resolución concreta (¿recuerdas aquello de web diseñada para mostrarse en 600px x 480px?). Era necesario adaptar los diseños a unas dimensiones concretas para que el usuario recibiera la información web en su dispositivo sin tener de hacer zoom para leer los textos.
+    
+                    <img src="./images/img-main.png" alt="main.png">En este momento surgen dos modos de trabajar. La primera abogaba por tener dos versiones de la misma web, una para escritorio y otra para móvil. En la mayoría de los casos no están conectadas entre sí. Esto era costoso de mantener (dos webs) y además no siempre se mostraba el mismo contenido y diseño a ambos usuarios.
+    
+    La segunda forma de trabajar es usar un mismo diseño para ambas resoluciones. Un diseño que se pudiera adaptar a unas determinadas resoluciones o ser flexible en su totalidad, independientemente del contenido y diseño que tuvieran. A esta nueva forma de trabajar se le denominó diseño web responsive.
+    
+    Y como el encargado del diseño en la web es el CSS, surgió un nuevo elemento capaz de incorporar esta flexibilidad a la hoja de estilos: las media queries, que pueden abarcar porciones de código que sólo se aplicarán según que condiciones: si la resolución de pantalla es pequeña, si es muy grande, si el dispositivo está en posición horizontal…
+            </p>
+        </section>
+        <div class="tituloNoticia" onclick="toggleHide(document.getElementsByName('noticia2'));">Investigación y ecologia</div>
+        <section name="noticia2" class="noticia">
+           <p class="importanteNoticia">Un análisis de sangre podría detectar ocho tipos de cáncer</p>
+           
+           <p>Un análisis de sangre podría detectar ocho tipos de cáncer
+                Científicos de la Universidad Johns Hopkins de Estados Unidos han elaborado una prueba, denominada CancerSEEK, que podría suponer un importante avance en la lucha contra el cáncer. El trabajo, publicado en la revista Science, aún no ha sido testado ni validado, pero esta investigación podría ser capaz de detectar ocho tipos de cáncer a partir de un análisis de sangre: mama, colorrectal, pulmón, ovario, hígado, estómago, páncreas y esófago.
+                Celulas investigación<img src="./images/celula.jpg" alt="">
+                
+                
+                El test podría ayudar a reducir el número de falsos positivos – la exploración que indica una enfermedad cuando en realidad no existe – y contribuir a una mayor detección precoz de los citados tumores, minimizando así las técnicas quirúrgicas invasivas. No obstante, la investigación se halla en una fase incipiente y sus aplicaciones en la práctica clínica podrían estar aún lejos de introducirse.
+                
+                Los científicos han estado centrados en análisis de biopsias líquidas que busca ADN mutado que flota libremente en la sangre y proteínas relacionadas al cáncer, para tratar de encontrar el cáncer antes de que se expanda y cuando hay una mejor chance de curar la enfermedad.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <nav id="footNav">
+            <ul>
+                <li> Nuestras noticias </li>
+                <li> sobre nosotros </li>
+                <li> contacto </li>
+                <li> otros </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
